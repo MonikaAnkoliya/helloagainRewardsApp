@@ -1,21 +1,47 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native App - Rewards Collection
 
-# Getting Started
+## Overview
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+This project is a basic React Native app built using **TypeScript**. It integrates **Redux** for state management to handle the collection of rewards. The app fetches rewards from an API and allows users to collect them while managing the state of collected rewards. 
 
-## Step 1: Start the Metro Server
+## Features
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Typescript-based Project**: The app is developed using TypeScript for strong typing and better code maintainability.
+- **Redux Store**: A Redux store is set up to manage the collected rewards data.
+- **Reward Collection Flow**: Users can collect rewards and see them in a separate list.
+- **Optimized UI**: UI optimizations to avoid unnecessary re-renders and handle loading/error states properly.
+- **UI/UX**: Thoughtfully designed list item UI with a “Collect” button and state changes when rewards are collected.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Requirements
+
+- **React Native CLI**: The project is based on the community CLI (not Expo).
+- **Redux**: State management for handling rewards data.
+- **TypeScript**: Strong typing support for better development practices.
+  
+## Tools & Libraries
+
+- **React Native**: The main framework for building mobile apps.
+- **Redux**: Used for state management to hold collected rewards data.
+- **React Navigation**: For handling navigation within the app.
+- **Axios**: For making API requests to fetch available rewards.
+- **React Redux**: To integrate Redux into React Native.
+- **React-Redux Hooks**: For using Redux with React functional components.
+
+## Setup
+
+To run the project locally, follow these steps:
+
+### 1. Install Dependencies
+
+Make sure you have **Node.js** installed, and then run:
 
 ```bash
 # using npm
-npm start
+
+npm install
 
 # OR using Yarn
-yarn start
+yarn android
 ```
 
 ## Step 2: Start your Application
@@ -45,15 +71,6 @@ yarn ios
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
 ## Congratulations! :tada:
 
